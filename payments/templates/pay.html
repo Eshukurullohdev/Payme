@@ -1,0 +1,29 @@
+<!-- templates/pay.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To‘lov sahifasi</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+    .qr { margin: 20px auto; }
+    a.button {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #38bdf8;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>QR kodni skanerlab to‘lovni amalga oshiring</h2>
+  <div class="qr">
+    <img src="{{ qr_code }}" alt="QR Code">
+  </div>
+  <p>Yoki quyidagi tugma orqali Click to‘lov sahifasiga o‘ting:</p>
+  <a href="{{ pay_url }}" target="_blank" class="button">To‘lov qilish</a>
+</body>
+</html>
